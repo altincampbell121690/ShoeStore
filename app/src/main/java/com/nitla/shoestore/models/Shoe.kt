@@ -1,4 +1,4 @@
-package com.nitla.shoestore.Models
+package com.nitla.shoestore.models
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

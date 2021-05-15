@@ -1,3 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">ShoeStore</string>
+    <string name="appName_str">Big Flex</string>
+    <string name="login_buttonText">LOGIN</string>
+    <string name="sign_up">SIGN UP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sloganText">The Only Place for Sole Searching</string>
+    <string name="find_your_fresh">FIND YOUR FRESH</string>
+    <string name="instruction_Txt">Welcome to big flex, the number one brand for authentic street-wear.\nWe do our best to service all styles.\nHere\'s how it works:\nFirst: Do some Sole Searching.\nSecond : Size them up!\nThird : Add them to the cart.\nThen : Just rinse and repeat if you\'re going on a shopping spree.\n Lastly : Checkout and we will have your new kicks your feet in a flash.</string>
 </resources>

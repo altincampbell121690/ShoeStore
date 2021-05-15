@@ -2,6 +2,36 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_navigation.xml">
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/login_destination">
+    <fragment
+        android:id="@+id/login_destination"
+        android:name="com.nitla.shoestore.views.login.LoginFragment"
+        android:label="Big Flex"
+        tools:layout="@layout/fragment_login"
+        >
+
+        <action
+            android:id="@+id/action_login_destination_to_welcomeFragment"
+            app:destination="@id/welcome_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome_destination"
+        android:name="com.nitla.shoestore.views.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instruction_destination" />
+        <argument
+            android:name="user"
+            app:argType="com.nitla.shoestore.models.User"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction_destination"
+        android:name="com.nitla.shoestore.views.instructions.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" />
 
 </navigation>
