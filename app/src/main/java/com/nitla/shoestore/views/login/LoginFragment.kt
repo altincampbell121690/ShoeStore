@@ -39,6 +39,8 @@ class LoginFragment : Fragment() {
 
         binding.loginButton.setOnClickListener { onWelcomeNavigation() }
 
+        binding.signupButton.setOnClickListener { onWelcomeNavigation() }
+
         binding.emailText.addTextChangedListener( getTextChangedListener() )
 
         viewModel.user.observe(this.viewLifecycleOwner, {
